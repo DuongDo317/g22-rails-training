@@ -14,6 +14,11 @@ gem "puma", "~> 3.11"
 gem "rack-cors"
 gem "rails", "~> 5.2.3"
 gem "rubocop", "~> 0.69.0", require: false
+gem "capistrano"
+gem "capistrano3-puma", github: "seuros/capistrano-puma"
+gem "capistrano-rails", require: false
+gem "capistrano-bundler", require: false
+gem "capistrano-rvm"
 
 group :development, :test do
   gem "byebug", platforms: %i[mri mingw x64_mingw]
